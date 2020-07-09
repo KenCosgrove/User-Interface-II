@@ -9,12 +9,14 @@ body {
   background: url("https://images.unsplash.com/photo-1583161056973-c0375771efb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1206&q=80")
     no-repeat center/cover;
 }
+
 h1 {
   font-family: "Fondamento", cursive;
   text-shadow: 8px 5px 3px black;
   font-size: 3rem;
   padding: 1.5rem 0 0.5rem 0.2rem;
 }
+
 h2 {
   font-family: "Fondamento", cursive;
   font-size: 2rem;
@@ -26,6 +28,8 @@ p {
 
 header {
   padding: 1.2rem;
+  background: url("https://images.unsplash.com/photo-1475257026007-0753d5429e10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")
+    no-repeat center/cover;
 }
 
 nav {
@@ -33,12 +37,29 @@ nav {
   width: 20rem;
   justify-content: space-around;
   margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@keyframes navHover {
+  from {
+    background: grey;
+    color: white;
+  }
+  to {
+    background: white;
+    color: grey;
+  }
 }
 
 nav a {
   background: grey;
   padding: 0.2rem 1rem;
   border: 1px solid white;
+}
+
+nav a:hover {
+  animation-name: navHover;
+  animation-duration: 2s;
 }
 
 a {
@@ -49,15 +70,23 @@ a:visited {
   color: white;
 }
 
+a:hover {
+  font-weight: bold;
+}
+
 button {
   padding: 0.5rem;
   border-radius: 1rem;
-  background: lightblue;
+  background: rgb(4, 140, 185);
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
 }
 
 .top-flex-container {
   display: flex;
   justify-content: space-around;
+  margin-top: 1rem;
 }
 
 .right {
@@ -68,22 +97,29 @@ button {
   flex-basis: 33%;
 }
 
+.right p {
+  font-size: 1.2rem;
+}
+
 .main-flex-container {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-around;
+  margin-top: 3rem;
 }
 
 .images {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-basis: 25%;
 }
 
 .images p {
   width: 11.5rem;
   text-align: center;
   text-transform: capitalize;
+  padding-bottom: 1.7rem;
 }
 
 .main-flex-container img {
@@ -93,14 +129,23 @@ button {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 1.2rem;
+  background: url("https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1429&q=80")
+    no-repeat center/cover;
 }
 
 footer a img {
   height: 2rem;
   width: 2rem;
   padding: 0 0.5rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .credit {
@@ -114,6 +159,4 @@ footer a img {
 
 .credit button {
   margin: -1.3rem 0 1.3rem 0;
-  color: rgb(182, 182, 182);
-  font-weight: bold;
 }
