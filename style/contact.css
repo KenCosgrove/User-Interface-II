@@ -144,6 +144,29 @@
   }
 }
 
+/* deskptop animations*/
+
+@media (pointer: fine) {
+  @keyframes navHover {
+    from {
+      background: grey;
+      color: white;
+    }
+    to {
+      background: white;
+      color: grey;
+    }
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+  nav a:hover {
+    animation-name: navHover;
+    animation-duration: 2s;
+  }
+}
+
 /*wide screen */
 
 @media (min-width: 1920px) {
@@ -174,7 +197,10 @@
   }
 
   .imgs {
-    display: flex;
-    width: 25%;
+    padding: 1rem 0 0.5rem 0;
+  }
+
+  .credit {
+    padding-bottom: 3.3rem;
   }
 }
