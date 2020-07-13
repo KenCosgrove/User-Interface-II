@@ -42,7 +42,9 @@
     margin: 0;
     text-align: center;
   }
-
+  img {
+    padding: 1rem;
+  }
   nav a {
     background: grey;
     padding: 0.2rem 1rem;
@@ -72,6 +74,10 @@
     align-items: center;
     text-align: center;
   }
+  .wrapper p {
+    padding: 1rem;
+  }
+
   .container {
     display: flex;
     justify-content: center;
@@ -132,17 +138,43 @@
     justify-items: right;
   }
 
-  .wrapper img,
-  p {
-    width: 50%;
-  }
-
-  img {
-    padding: 2rem;
-  }
-
   .container {
     justify-content: flex-start;
     padding: 0.5rem 2rem;
+  }
+}
+
+/*wide screen */
+
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 60%;
+  }
+  .container {
+    justify-content: center;
+  }
+  .form h2 {
+    text-align: center;
+    padding: 1rem;
+  }
+  .contact {
+    display: flex;
+  }
+  .contact p {
+    padding: 1rem;
+  }
+  button {
+    margin-left: 1rem;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .imgs {
+    display: flex;
+    width: 25%;
   }
 }
