@@ -161,3 +161,45 @@ footer a img {
 .credit button {
   margin: -1.3rem 0 1.3rem 0;
 }
+
+/*Media Queries*/
+
+@media (max-width: 800px) {
+  .top-flex-container {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .right {
+    align-items: center;
+    text-align: center;
+  }
+  .right button {
+    margin: 1rem 0;
+  }
+  .left img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .images {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+    padding: 0;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  nav a {
+    width: 3rem;
+  }
+}
