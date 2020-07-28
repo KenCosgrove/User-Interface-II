@@ -1,0 +1,110 @@
+@media (min-width: 360px) {
+  * {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+  body {
+    font-family: "Sahitya", serif;
+    background: url("https://images.unsplash.com/photo-1583161056973-c0375771efb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1206&q=80")
+      no-repeat center/cover;
+    height: 100vh;
+  }
+
+  h1 {
+    font-family: "Fondamento", cursive;
+    text-align: center;
+    font-size: 3rem;
+    padding: 0;
+  }
+
+  h2 {
+    font-family: "Fondamento", cursive;
+    font-size: 2rem;
+    text-shadow: 8px 5px 3px black;
+  }
+
+  p {
+    text-shadow: 4px 4px 3px black;
+  }
+
+  header {
+    padding: 1.2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  nav a {
+    background: grey;
+    padding: 0.2rem 1rem;
+    border: 1px solid white;
+    width: 3rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  button {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: rgb(4, 140, 185);
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.2rem;
+  }
+
+  footer a img {
+    height: 2rem;
+    width: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .credit {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    padding: 1rem;
+    align-items: center;
+    color: white;
+  }
+
+  .credit button {
+    margin: -1.3rem 0 1.3rem 0;
+  }
+}
