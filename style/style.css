@@ -82,6 +82,9 @@ button {
   padding: 3rem;
 }
 
+.wrapper img {
+  height: 5rem;
+}
 footer {
   display: flex;
   flex-direction: column;
